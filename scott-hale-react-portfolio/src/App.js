@@ -1,10 +1,8 @@
 import React from "react";
-import PortfolioContainer from "../components/PortfolioContainer";
-
-import * as React from 'react';
 import { NextUIProvider } from '@nextui-org/react';
+import PortfolioContainer from "./components/PortfolioContainer";
 
-function App({ PortfolioContainer }) {
+const App = () => {
     return (
         <NextUIProvider>
       <PortfolioContainer />
