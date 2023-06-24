@@ -8,22 +8,22 @@ function Navigation( {currentPage, handlePageChange } ) {
 
   return (
     <div>
-        <div>
+        <nav className='flex justify-end space-x-4'>
           {page.map((tab, i) => (
 
-          <div 
+          <a 
             key={i} 
-            color="gradient" 
+            className="font-bold px-1 py-1 text-slate-400 rounded-md hover:bg-blue-900 hover:text-blue-400"
             size="sm" 
             href={"#" + tab}
             onClick={() => handlePageChange(tab)}
-            isActive={currentPage === tab}
+            // isActive={currentPage === tab}
             >
               {tab}
-          </div>
+          </a>
           ))
           }
-      </div>
+      </nav>
     </div>
   );
 }

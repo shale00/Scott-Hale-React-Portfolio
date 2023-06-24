@@ -3,10 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <h1>About Me</h1>
       <p>
-        I am Certified Public Accountant licensed in Texas, I compete in annual
-        barbershop quartet competitions, and I love sports!
+        This is the footer. I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
       </p>
     </div>
   );
