@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import gitHubLogo from "./Images/GitHub_Logo_White.png";
+import linkedInLogo from "./Images/LI-Logo.png";
 
 export default function About() {
+  const [logos, setLogos] = useState([
+    {
+      img: gitHubLogo,
+      link: "https://github.com/shale00",
+      alt: "GitHub logo",
+    },
+    {
+      img: linkedInLogo,
+      link: "https://www.linkedin.com/in/scott-hale/",
+      alt: "LinkedIn logo",
+    },
+  ]);
+
   return (
     <div>
-      <p>
-        This is the footer. I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
-      </p>
+      <p>Check out my links!</p>
+
+      {logos.map((logo, i) => (
+        
+
+        <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer">
+          <img className="object-scale-down h-auto w-1/12" src={logo.img} alt={logo.alt} />
+        </a>
+      ))}
     </div>
   );
 }

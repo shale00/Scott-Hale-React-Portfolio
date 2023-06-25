@@ -5,8 +5,7 @@ export default function About() {
     <div>
       <h1 className="">About Me</h1>
       <p>
-        I am Certified Public Accountant licensed in Texas, I compete in annual
-        barbershop quartet competitions, and I love sports!
+        I am a full-stack developer with a passion for logical and easy to use applications and websites. As an experienced CPA, I bring a unique perspective to every project I undertake. With a focus on both financial and technical expertise, I am well-equipped to manage complex projects and lead teams under strict deadlines. My ability to work effectively with clients and colleagues alike has been a hallmark of my career.
       </p>
     </div>
   );
