@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+
 import gitHubLogo from "./Images/GitHub_Logo_White.png";
 import linkedInLogo from "./Images/LI-Logo.png";
 
 export default function About() {
-  const [logos, setLogos] = useState([
+  const logos = ([
     {
       img: gitHubLogo,
       link: "https://github.com/shale00",
@@ -17,15 +17,21 @@ export default function About() {
   ]);
 
   return (
-    <div>
-      <p>Check out my links!</p>
+    <div className="my-8 flex justify-center space-x-3 ">
+      <div>
+        <p>Check out my links:</p>
+      </div>
 
       {logos.map((logo, i) => (
-        
 
-        <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer">
-          <img className="object-scale-down h-auto w-1/12" src={logo.img} alt={logo.alt} />
-        </a>
+          <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer">
+            <img
+              className="object-scale-down h-auto w-20"
+              src={logo.img}
+              alt={logo.alt}
+            />
+          </a>
+        
       ))}
     </div>
   );
