@@ -4,10 +4,11 @@ import './App.css'
 
 import PortfolioContainer from "./components/PortfolioContainer";
 
+
 const App = () => {
   
   return (
-    <div className="bg-blue-950 text-slate-100">
+    <div className="bg-gray-800 text-slate-300">
       <PortfolioContainer />
 
     </div>

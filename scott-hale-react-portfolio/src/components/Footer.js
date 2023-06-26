@@ -26,7 +26,7 @@ export default function About() {
 
           <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer">
             <img
-              className="object-scale-down h-auto w-20"
+              className="object-scale-down h-auto w-16"
               src={logo.img}
               alt={logo.alt}
             />

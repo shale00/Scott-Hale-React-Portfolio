@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-
 
 function Navigation( {currentPage, handlePageChange } ) {
   
   
-  const [ page, setPage] = useState(["About", "Portfolio", "Resume", "Contact"]);
+  const page = ["About", "Portfolio", "Resume", "Contact"];
 
   return (
     <div>
@@ -13,8 +11,7 @@ function Navigation( {currentPage, handlePageChange } ) {
 
           <a 
             key={i} 
-            className="font-bold px-1 py-1 text-slate-400 rounded-md hover:bg-blue-900 hover:text-blue-400"
-            size="sm" 
+            className="font-bold py-1 text-slate-400 rounded-md hover:bg-blue-900 hover:text-blue-400 hover:scale-125"
             href={"#" + tab}
             onClick={() => handlePageChange(tab)}
             // isActive={currentPage === tab}
