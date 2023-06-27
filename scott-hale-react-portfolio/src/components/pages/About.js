@@ -4,23 +4,33 @@ import React, { useEffect } from "react";
 
 export default function About() {
 
-  useEffect(()=>{
-    gsap.from(".section", {
-      keyframes: [
-        {x: -200},
-        {x:200,},
-        {x:0}
-      ],
-      ease: 'bounce'
-    })
+  // useEffect(()=>{
+  //   gsap.from(".section", {
+  //     keyframes: [
+  //       {x: -200},
+  //       {x:200,},
+  //       {x:0}
+  //     ],
+  //     ease: 'bounce'
+  //   })
+  // });
 
-    
-  });
+  // useEffect(()=>{
+  //   gsap.to(".section", {stagger:.15, keyframes: [
+  //     {x:-200},
+  //     {x:200},
+  //     {x:0, ease:'bounce.out'}
+  //   ], duration: 2});
+  // });
+
+  useEffect(()=>{
+    gsap.fromTo(".section",{ x:-400, opacity:0}, {x:0 , y:0, opacity: 1, duration:1.25, stagger: .15})
+  })
  
   return (
     <div className="p-8 sm:p-32">
       <section className="section" >
-        <h1 className="text-3xl text-white font-bold min-h-full md:min-h-full">
+        <h1 className="text-2xl text-white min-h-full md:min-h-full">
           &lt;h1&gt; <br className="p-10" />
           Hello World <br />
           &lt;/h1&gt;
