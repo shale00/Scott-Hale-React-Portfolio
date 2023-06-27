@@ -6,7 +6,7 @@ function Navigation( {currentPage, handlePageChange } ) {
 
   return (
     <div>
-        <nav className='flex justify-end space-x-4'>
+        <nav className='flex justify-end space-x-3'>
           {page.map((tab, i) => (
 
           <a 

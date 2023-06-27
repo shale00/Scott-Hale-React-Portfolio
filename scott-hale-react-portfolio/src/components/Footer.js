@@ -1,6 +1,7 @@
 
-import gitHubLogo from "./Images/GitHub_Logo_White.png";
-import linkedInLogo from "./Images/LI-Logo.png";
+import gitHubLogo from "./Icons/icons8-github-100.png";
+import linkedInLogo from "./Icons/icons8-linkedin-100.png";
+import gmailLogo from "./Icons/icons8-gmail-100.png";
 
 export default function About() {
   const logos = ([
@@ -14,19 +15,21 @@ export default function About() {
       link: "https://www.linkedin.com/in/scott-hale/",
       alt: "LinkedIn logo",
     },
+    {
+      img: gmailLogo,
+      link: "mailto:sth0067@gmail.com",
+      alt: "Gmail logo",
+    },
   ]);
 
   return (
-    <div className="my-8 flex justify-center space-x-3 ">
-      <div>
-        <p>Check out my links:</p>
-      </div>
+    <div className="my-8 flex justify-center space-x-3">
 
       {logos.map((logo, i) => (
 
           <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer">
             <img
-              className="object-scale-down h-auto w-16"
+              className="object-scale-down h-10 w-auto"
               src={logo.img}
               alt={logo.alt}
             />

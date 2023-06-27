@@ -6,7 +6,7 @@ import Footer from "./Footer";
 export default function PortfolioContainer() {
   
   return (
-    <div >
+    <div className="relative">
       <Header />
 
       <Footer />
