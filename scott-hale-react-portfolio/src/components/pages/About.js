@@ -4,20 +4,19 @@ import React, { useEffect } from "react";
 
 export default function About() {
 
-
   useEffect(()=>{
-    gsap.to(".section", {
+    gsap.from(".section", {
       keyframes: [
         {x: -200},
         {x:200,},
         {x:0}
       ],
-      ease: 'power2.out'
+      ease: 'bounce'
     })
+
+    
   });
  
-
-
   return (
     <div className="p-8 sm:p-32">
       <section className="section" >
@@ -29,7 +28,7 @@ export default function About() {
       </section>
       <section className="section" >
         <p className="grid content-center place-content-center">
-          I am a full-stack developer with a passion for logical and easy to use
+          I am a full-stack web developer with a passion for logical and easy to use
           applications and websites. As an experienced CPA, I bring a unique
           perspective to every project I undertake.
         </p>
