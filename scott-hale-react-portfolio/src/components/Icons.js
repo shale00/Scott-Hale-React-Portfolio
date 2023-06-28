@@ -91,10 +91,10 @@ const icons = [
         img: nodeIcon,
         alt: "VSCode"
     },
-    {
-        img: apiIcon,
-        alt: "API"
-    },
+    // {
+    //     img: apiIcon,
+    //     alt: "API"
+    // },
     {
         img: restApiIcon,
         alt: "Rest API"
