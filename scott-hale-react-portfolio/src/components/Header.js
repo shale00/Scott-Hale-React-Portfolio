@@ -27,7 +27,7 @@ export default function Header() {
     <div>
       <div className="sticky top-0 left-0 right-0 bg-gradient-to-r from-gray-900 via-blue-900 to-sky-700 opacity-90 z-50 p-3">
         <div className="text-blue-300">
-          <h1>Scott's Portfolio</h1>
+          <h1 className="text-3xl">Scott's Portfolio</h1>
         </div>
         <Navigation
           currentPage={currentPage}

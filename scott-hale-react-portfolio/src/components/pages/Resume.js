@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 import icons from "../Icons";
 import { gsap } from "gsap";
+import downloadIcon from "../Icons/icons8-download-64.png";
+import resumeDoc from "../Images/Scott Hale Resume.pdf";
 
 export default function Resume() {
-
   useEffect(() => {
     const firstAnimation = gsap.fromTo(
       "#tween",
       { x: -400, opacity: 0 },
       { x: 0, y: 0, opacity: 1, duration: 1.25, stagger: 0.15 }
     );
-  
+
     firstAnimation.eventCallback("onComplete", () => {
       gsap.to("#icons", {
         duration: 1.5,
@@ -31,27 +32,37 @@ export default function Resume() {
         },
       });
     });
-  
   }, []);
-  
-  
+
 
   return (
     <div className="p-8">
+      <div id="tween" className="flex justify-end">
+        <button
+          className="bg-gray-600 hover:bg-blue-700 hover:text-black text-gray-400 text-xs font-bold py-2 px-4 rounded flex items-end border border-gray-900"
+          href={resumeDoc}
+          download={resumeDoc}
+        >
+          <img src={downloadIcon} className="object-scale-down w-4"></img>
+          Resume.pdf
+        </button>
+      </div>
       <div id="tween" className="p-10 grid gap-6">
-        <h1 id="tween">What I've Learned</h1>
-        <ul className="list-disc">
-          <li id="tween">
-            The fundamental concepts of web development, covering
-            HTML, CSS, and JavaScript, as well as command line fundamentals and
-            API consumption.
+        <h1 id="tween helloWorld" className="text-2xl italic">
+          What I've Learned
+        </h1>
+        <ul className="list-disc md:p-8 sm:p-12 lg:p-20">
+          <li className="p-2" id="tween">
+            The fundamental concepts of web development, covering HTML, CSS, and
+            JavaScript, as well as command line fundamentals and API
+            consumption.
           </li>
-          <li id="tween">
+          <li className="p-2" id="tween">
             I've engineered full-stack web applications, working with servers,
             databases, and other back end technologies, and connecting them to
             the front end.
           </li>
-          <li id="tween">
+          <li className="p-2" id="tween">
             Most recently I've learned how to create single-page applications
             with React (like this portfolio!).
           </li>
@@ -68,11 +79,10 @@ export default function Resume() {
               alt={icon.alt}
               className="object-scale-down h-14 place-items-center"
             />
-            
           ))}
         </div>
       </div>
-      <div className="pt-4 flex justify-center">
+      <div className="pt-40 flex justify-center">
         <a target="_blank" href="https://icons8.com/icon/21278/css3"></a> Icons
         by{" "}
         <a target="_blank" href="https://icons8.com">

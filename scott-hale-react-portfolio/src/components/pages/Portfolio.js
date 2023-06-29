@@ -49,8 +49,8 @@ export default function Portfolio() {
     <div className="flex flex-wrap gap-6 justify-center text-gray-200 p-6">
       {projects.map((proj, i) => (
         <div id="tween" key={i} className="max-w-md rounded-lg overflow-hidden shadow-2xl shadow-black grid relative border-2 border-l-0 border-t-0 border-black
-        hover:bg-slate-700">
-          <img className="object-scale-down w-fit max-h-80 place-self-center object-top" src={proj.img} alt={proj.alt} />
+        hover:bg-slate-800 hover:!scale-105">
+          <img className="object-scale-down w-fit max-h-80 place-self-center object-top hover:snap-start" src={proj.img} alt={proj.alt} />
           <div className="px-6 py-4">
             <div className="font-bold text-xl  mb-2">{proj.title}</div>
             <p className="text-gray-300 text-base">{proj.description}</p>

@@ -53,8 +53,8 @@ export default function About() {
   }
 
   return (
-    <div onMouseMove={onMove} className="p-8 sm:p-18 grid gap-6 grid-cols-2 sm:min-h-screen">
-      <div className="place-self-center">
+    <div onMouseMove={onMove} className="p-10 sm:p-16 grid gap-16 grid-cols-2  place-content-center">
+      <div className="italic">
         <section className="section">
           <h1
             id="hello"
@@ -84,9 +84,9 @@ export default function About() {
       <section className="section row-start-2 col-span-2 sm:max-w-md place-self-center md:col-span-1">
         <img src={guySVG} className=" md:max-h-48" />
       </section>
-{/* max-h-20 sm:max-h-48 min-w-15 */}
-      <section className="section row-start-3 col-span-2 w-3/4 shadow-emerald-50 place-self-center md:row-start-2">
-        <p className="indent-3">
+
+      <section className="section row-start-3 col-span-2 w-3/4 shadow-emerald-50 place-self-center md:row-start-2 ">
+        <p className="">
           I am a full-stack web developer with a passion for logical and easy to
           use applications and websites. As an experienced CPA, I bring a unique
           perspective to every project I undertake.
