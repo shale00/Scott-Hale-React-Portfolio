@@ -14,7 +14,7 @@ export default function Resume() {
     firstAnimation.eventCallback("onComplete", () => {
       gsap.to("#icons", {
         duration: 1.5,
-        scale: 0.1,
+        scale: 0.25,
         y: 60,
         yoyo: true,
         repeat: -1,
