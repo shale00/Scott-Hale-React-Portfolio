@@ -11,7 +11,7 @@ function Navigation( {currentPage, handlePageChange } ) {
             id="navText"
             key={i} 
             className={`font-bold py-1 text-slate-400 rounded-md hover:text-blue-400 hover:scale-125 ${
-              currentPage === page ? "text-blue-500 scale-110" : ""
+              currentPage === page ? "text-white" : ""
             }`}
             href={"#" + page}
             onClick={() => handlePageChange(page)}
