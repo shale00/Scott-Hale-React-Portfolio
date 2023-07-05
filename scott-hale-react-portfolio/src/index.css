@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 body {
+  background-color: #0466c8;
+  color: #dddddd;
   margin: 0;
   /* font-family: 'Inconsolata', monospace; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif

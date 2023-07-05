@@ -3,6 +3,7 @@ import icons from "../Icons";
 import { gsap } from "gsap";
 import downloadIcon from "../Icons/icons8-download-64.png";
 import resumeDoc from "../Images/Scott Hale Resume.pdf";
+import "./Resume.css";
 
 export default function Resume() {
   useEffect(() => {
@@ -15,7 +16,7 @@ export default function Resume() {
     firstAnimation.eventCallback("onComplete", () => {
       gsap.to("#icons", {
         duration: 1.5,
-        scale: 0.25,
+        scale: 0.5,
         y: 60,
         yoyo: true,
         repeat: -1,
@@ -34,12 +35,11 @@ export default function Resume() {
     });
   }, []);
 
-
   return (
     <div className="p-8">
       <div id="tween" className="flex justify-end">
         <button
-          className="bg-gray-600 hover:bg-blue-700 hover:text-black text-gray-400 text-xs font-bold py-2 px-4 rounded flex items-end border border-gray-900"
+          className=" hover:bg-gray-700 text-black hover:text-white  text-xs font-bold py-1 px-2 rounded flex items-end border-2 border-gray-900"
           href={resumeDoc}
           download={resumeDoc}
         >
@@ -48,21 +48,25 @@ export default function Resume() {
         </button>
       </div>
       <div id="tween" className="p-10 grid gap-6">
-        <h1 id="tween helloWorld" className="text-2xl italic">
-          What I've Learned
+        <h1 id="tween" className="text-3xl italic title">
+          What I've Learned:
         </h1>
-        <ul className="list-disc md:p-8 sm:p-12 lg:p-20">
-          <li className="p-2" id="tween">
+        <ul className="place-content-center  grid gap-2">
+          <li
+            className="p-2 md:p-5 
+        "
+            id="tween"
+          >
             The fundamental concepts of web development, covering HTML, CSS, and
             JavaScript, as well as command line fundamentals and API
             consumption.
           </li>
-          <li className="p-2" id="tween">
+          <li className="p-2 md:p-5 " id="tween">
             I've engineered full-stack web applications, working with servers,
             databases, and other back end technologies, and connecting them to
             the front end.
           </li>
-          <li className="p-2" id="tween">
+          <li className="p-2 md:p-5" id="tween">
             Most recently I've learned how to create single-page applications
             with React (like this portfolio!).
           </li>

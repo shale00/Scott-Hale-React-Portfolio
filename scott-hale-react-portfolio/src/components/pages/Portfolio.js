@@ -11,39 +11,6 @@ export default function Portfolio() {
     );
   });
 
-  // useEffect(() => {
-  //   const elements = document.querySelectorAll("#tween");
-
-  //   const animations = [];
-
-  //   elements.forEach((element) => {
-  //     const animation = gsap.to(element, {
-  //       // Define your animation properties
-  //       scale: 1.2,
-  //       duration: 0.3,
-  //       ease: "power1.inOut",
-  //     });
-
-  //     element.addEventListener("mouseenter", () => {
-  //       // Play the animation when the mouse enters the element
-  //       animation.play();
-  //     });
-
-  //     element.addEventListener("mouseleave", () => {
-  //       // Reverse the animation when the mouse leaves the element
-  //       animation.reverse();
-  //     });
-
-  //     animations.push(animation);
-  //   });
-
-  //   // Return a cleanup function to cancel the animations if needed
-  //   return () => {
-  //     animations.forEach((animation) => animation.kill()); // Cancel the animations if they're still running
-  //   };
-  // }, []);
-
-
 
   return (
     <div className="flex flex-wrap gap-6 justify-center text-gray-200 p-6">

@@ -1,24 +1,25 @@
-import { gsap } from "gsap";
+
 
 function Navigation( {currentPage, handlePageChange } ) {
   
   
-  const page = ["About", "Portfolio", "Resume", "Contact"];
+  const pages = ["About", "Portfolio", "Resume", "Contact"];
 
   return (
     <div >
         <nav className='flex justify-end space-x-3'>
-          {page.map((tab, i) => (
+          {pages.map((page, i) => (
 
           <a
             id="navText"
             key={i} 
-            className="font-bold py-1 text-slate-400 rounded-md hover:text-blue-400 hover:scale-125"
-            href={"#" + tab}
-            onClick={() => handlePageChange(tab)}
-            // isActive={currentPage === tab}
+            className={`font-bold py-1 text-slate-400 rounded-md hover:text-blue-400 hover:scale-125 ${
+              currentPage === page ? "text-blue-400" : ""
+            }`}
+            href={"#" + page}
+            onClick={() => handlePageChange(page)}
             >
-              {tab}
+              {page}
           </a>
           ))
           }

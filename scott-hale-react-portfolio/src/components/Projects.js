@@ -3,6 +3,7 @@ import portfolioImg from './Images/Snapshot-of-Portfolio.png';
 import parktivitiesImg from './Images/Parktivities screenshot.png';
 import weatherAppImg from './Images/weatherDashboar-screenshot.png';
 import workDayImg from './Images/05-third-party-apis-homework-demo.gif';
+import quizImg from './Images/quiz challenge start.png';
 
 
 const projects = [
@@ -46,14 +47,14 @@ const projects = [
       alt: "A gif of the app.",
       description: "A simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery."
     },
-    // {
-    //   title: "",
-    //   img: "",
-    //   depLink: "",
-    //   gitHubLink: "",
-    //   alt: "",
-    //   description: ""
-    // }
+    {
+      title: "Code Quiz",
+      img: quizImg,
+      depLink: "https://shale00.github.io/Code-Quiz/",
+      gitHubLink: "https://github.com/shale00/Code-Quiz",
+      alt: "Screenshot of app",
+      description: "A quiz to test your knowledge of basic coding in javascript. This app was developed using just HTML, CSS, and Javascript."
+    }
   ];
 
 export default projects;

@@ -4,24 +4,6 @@ import "./About.css";
 import guySVG from "../Images/undraw_feeling_proud_qne1.svg";
 
 export default function About() {
-  // useEffect(()=>{
-  //   gsap.from(".section", {
-  //     keyframes: [
-  //       {x: -200},
-  //       {x:200,},
-  //       {x:0}
-  //     ],
-  //     ease: 'bounce'
-  //   })
-  // });
-
-  // useEffect(()=>{
-  //   gsap.to(".section", {stagger:.15, keyframes: [
-  //     {x:-200},
-  //     {x:200},
-  //     {x:0, ease:'bounce.out'}
-  //   ], duration: 2});
-  // });
 
   useEffect(() => {
     gsap.fromTo(
@@ -51,6 +33,8 @@ export default function About() {
     let helloElement = document.getElementById("helloWorld");
     helloElement.style.color = value;
   }
+
+  
 
   return (
     <div onMouseMove={onMove} className="p-10 sm:p-16 grid gap-16 grid-cols-2  place-content-center">
@@ -82,7 +66,7 @@ export default function About() {
       </div>
 
       <section className="section row-start-2 col-span-2 sm:max-w-md place-self-center md:col-span-1">
-        <img src={guySVG} className=" md:max-h-48" />
+        <img src={guySVG} alt="guy sitting on a desk" className=" md:max-h-48" />
       </section>
 
       <section className="section row-start-3 col-span-2 w-3/4 shadow-emerald-50 place-self-center md:row-start-2 ">
