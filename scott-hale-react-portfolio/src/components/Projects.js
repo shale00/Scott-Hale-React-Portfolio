@@ -4,7 +4,7 @@ import parktivitiesImg from "./Images/Parktivities screenshot.png";
 import weatherAppImg from "./Images/weatherDashboar-screenshot.png";
 import workDayImg from "./Images/05-third-party-apis-homework-demo.gif";
 import quizImg from "./Images/quiz challenge start.png";
-import cohortRetortImg from "./Images/quiz challenge Cohort-Retort login screenshot.png.png";
+import cohortRetortImg from "./Images/Cohort-Retort login screenshot.png";
 
 const projects = [
   {
