@@ -6,12 +6,11 @@ import workDayImg from "./Images/05-third-party-apis-homework-demo.gif";
 import quizImg from "./Images/quiz challenge start.png";
 import cohortRetortImg from "./Images/quiz challenge Cohort-Retort login screenshot.png.png";
 
-
 const projects = [
   {
     title: "Cohort-Retort",
     img: cohortRetortImg,
-    depLink: "https://cohort-retort.vercel.app/",
+    depLink: "https://cohort-retort-v1-3ead1d24c761.herokuapp.com",
     gitHubLink: "https://github.com/shale00/Cohort-Retort",
     alt: "Snapshot of a cohort-retort webpage",
     description:
