@@ -37,7 +37,7 @@ export default function About() {
   
 
   return (
-    <div onMouseMove={onMove} className="p-10 sm:p-16 grid gap-16 grid-cols-2  place-content-center">
+    <div onMouseMove={onMove} className="p-10 sm:p-16 grid gap-16 grid-cols-2 place-content-center">
       <div className="italic">
         <section className="section">
           <h1

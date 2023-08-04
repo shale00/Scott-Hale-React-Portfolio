@@ -38,14 +38,14 @@ export default function Resume() {
   return (
     <div className="p-8">
       <div id="tween" className="flex justify-end">
-        <button
+        {/* <button
           className=" hover:bg-gray-700 text-black hover:text-white  text-xs font-bold py-1 px-2 rounded flex items-end border-2 border-gray-900"
           href={resumeDoc}
           download={resumeDoc}
         >
           <img src={downloadIcon} className="object-scale-down w-4"></img>
           Resume.pdf
-        </button>
+        </button> */}
       </div>
       <div id="tween" className="p-10 grid gap-6">
         <h1 id="tween" className="text-3xl italic title">

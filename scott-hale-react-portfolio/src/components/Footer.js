@@ -33,7 +33,7 @@ export default function About() {
 
       {logos.map((logo, i) => (
 
-          <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer">
+          <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer" className="hover:scale-125 hover:transition-colors">
             <img
               className="object-scale-down h-10 w-auto"
               src={logo.img}
