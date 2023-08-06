@@ -13,7 +13,7 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "Cohort-Retort",
+      title: "Cohort Retort",
       img: cohortRetortImg,
       depLink: "https://cohort-retort-v1-3ead1d24c761.herokuapp.com",
       gitHubLink: "https://github.com/shale00/Cohort-Retort",
