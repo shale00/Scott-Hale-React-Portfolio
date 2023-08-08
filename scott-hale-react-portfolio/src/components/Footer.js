@@ -2,9 +2,8 @@
 import gitHubLogo from "./Icons/icons8-github-100.png";
 import linkedInLogo from "./Icons/icons8-linkedin-100.png";
 import gmailLogo from "./Icons/icons8-gmail-100.png";
-import codewarsLogo from "./Icons/icons8-codewars-96.png";
 
-export default function About() {
+export default function Home() {
   const logos = ([
     {
       img: gitHubLogo,
@@ -15,11 +14,6 @@ export default function About() {
       img: linkedInLogo,
       link: "https://www.linkedin.com/in/scott-hale/",
       alt: "LinkedIn logo",
-    },
-    {
-      img: codewarsLogo,
-      link: "https://www.codewars.com/users/HughWilby",
-      alt: "Codewars logo",
     },
     {
       img: gmailLogo,

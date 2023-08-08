@@ -72,7 +72,7 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
                 href={gitHubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lg:py-2 lg:px-4 py-1 px-2 bg-blue-600 shadow-lg shadow-black rounded-lg hover:scale-110 hover:bg-blue-900 transition-all ease-out duration-300"
+                className="lg:py-2 lg:px-8 py-1 px-7 bg-blue-600 shadow-lg shadow-black rounded-lg hover:scale-110 hover:bg-blue-900 transition-all ease-out duration-300"
               >
                 GitHub
               </a>

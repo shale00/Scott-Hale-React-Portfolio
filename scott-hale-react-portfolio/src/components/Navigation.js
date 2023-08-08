@@ -1,10 +1,10 @@
 function Navigation( {currentPage, handlePageChange } ) {
   
-  const pages = ["About", "Portfolio", "Resume", "Contact"];
+  const pages = ["Home", "Projects", "Resume", "Contact"];
 
   return (
     <div >
-        <nav className='flex justify-end space-x-3'>
+        <nav className='flex justify-center space-x-3 uppercase p-8'>
           {pages.map((page, i) => (
 
           <a

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #0466c8;
+  background-color: #3a4959;
   color: #dddddd;
   margin: 0;
   /* font-family: 'Inconsolata', monospace; */
@@ -13,6 +13,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.typed-cursor {
+  font-size: x-large;
 }
 
 /* @layer components {

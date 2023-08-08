@@ -9,7 +9,7 @@ export default function Contact() {
       { x: -400, opacity: 0 },
       { x: 0, y: 0, opacity: 1, duration: 1.25, stagger: 0.15 }
     );
-  });
+  }, [] );
 
   const [state, handleSubmit] = useForm("mjvqglra");
   if (state.succeeded) {

@@ -59,16 +59,8 @@ export default function Resume() {
           >
             The fundamental concepts of web development, covering HTML, CSS, and
             JavaScript, as well as command line fundamentals and API
-            consumption.
-          </li>
-          <li className="p-2 md:p-5 " id="tween">
-            I've engineered full-stack web applications, working with servers,
-            databases, and other back end technologies, and connecting them to
-            the front end.
-          </li>
-          <li className="p-2 md:p-5" id="tween">
-            Most recently I've learned how to create single-page applications
-            with React (like this portfolio!).
+            consumption. I've engineered full-stack web applications, working with servers,
+            databases, and other back end technologies.
           </li>
         </ul>
       </div>

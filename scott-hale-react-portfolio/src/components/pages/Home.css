@@ -1,0 +1,27 @@
+h1 {
+  font-family: "Inconsolata", monospace;
+  font-weight: bolder;
+}
+
+.custom-border {
+  --b: 20px;
+  --t: 4px;
+  --l: 110px;
+  --g:linear-gradient(#15F4EE 0 0);
+
+  background: var(--g) 0 0 / var(--l) var(--t), 
+  var(--g) 0 0 / var(--t) var(--l), 
+  var(--g) 100% 100% / var(--l) var(--t), 
+  var(--g) 100% 100% / var(--t) var(--l), 
+  none;
+background-repeat: no-repeat;
+clip-path:polygon(0 0,calc(100% - var(--b)) 0,100% var(--b),100% 100%,var(--b) 100%,0 calc(100% - var(--b)));
+position:relative;
+padding: 2px;
+}
+
+@media (max-width: 600px) {
+  .custom-border-none {
+    background: none;
+  }
+}
