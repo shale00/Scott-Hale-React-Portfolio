@@ -1,56 +1,36 @@
 import React from "react";
 import Card from "../Card";
 
-import codeBoardImg from "../Images/CodeBoard.png";
-import portfolioImg from "../Images/Snapshot-of-Portfolio.png";
-import parktivitiesImg from "../Images/Parktivities screenshot.png";
-import weatherAppImg from "../Images/weatherDashboar-screenshot.png";
-import workDayImg from "../Images/05-third-party-apis-homework-demo.gif";
-import quizImg from "../Images/quiz challenge start.png";
-import cohortRetortImg from "../Images/Cohort-Retort login screenshot.png";
+import cohortRetortGif from "../Images/CR WalkthroughV2.gif";
+import parktivitiesWalkthrough from "../Images/Parktivities-Walkthrough.gif";
+import cqWalkthrough from "../Images/CQ-Walkthrough.gif";
+import weatherWalkthrough from "../Images/Weather-Walkthrough.gif";
+import schedulerWalkthrough from "../Images/Scheduler-Walkthrough.gif";
 
 const Portfolio = () => {
 
   const projects = [
     {
       title: "Cohort Retort",
-      img: cohortRetortImg,
+      img: cohortRetortGif,
       depLink: "https://cohort-retort-v1-3ead1d24c761.herokuapp.com",
       gitHubLink: "https://github.com/shale00/Cohort-Retort",
       alt: "Snapshot of a cohort-retort webpage",
       description:
-        "This app was created using a full MERN stack and is a social networking app. Designed to keep classmates in touch, users can create an account and post messages and comments.",
-    },
-    // {
-    //   title: "Original Portfolio",
-    //   img: portfolioImg,
-    //   depLink: "https://shale00.github.io/scott-hale-portfolio/",
-    //   gitHubLink: "https://github.com/shale00/scott-hale-portfolio",
-    //   alt: "Snapshot of a portfolio webpage",
-    //   description:
-    //     "This is one of the first assignments for the full stack web dev bootcamp and it was made from scratch using only html and css.",
-    // },
-    {
-      title: "Code Board",
-      img: codeBoardImg,
-      depLink: "https://codeboard.herokuapp.com/",
-      gitHubLink: "https://github.com/shale00/code-board",
-      alt: "Snapshot of the message board page.",
-      description:
-        "This app is a job and career resource posting website where users can create an account. Once the user has created an account, they will be able to view, create, and delete their respective posts on the homepage.",
+        "This app was created using a full MERN stack. It is a social networking app designed to keep classmates in touch. Users can create an account and post messages and comments. Each user has their own profile page, where the user can update their information.",
     },
     {
       title: "Parktivities",
-      img: parktivitiesImg,
+      img: parktivitiesWalkthrough,
       depLink: "https://shale00.github.io/Parktivities/",
       gitHubLink: "https://github.com/shale00/Parktivities",
       alt: "Snapshot of the Parktivities app.",
       description:
-        "This app allows the user to search national parks via state or activity. It was created using HTML, CSS, and JavaScript and uses two different 3rd Party API's to retrieve the park data and the state flag for each park respectively.",
+        "This app allows the user to search national parks via state or activity. It was created using HTML, CSS, and JavaScript and uses two different 3rd Party API's to retrieve the park data and the state flag for each park respectively. It also stores the user's search history using local storage.",
     },
     {
       title: "Weather Dashboard",
-      img: weatherAppImg,
+      img: weatherWalkthrough,
       depLink: "https://shale00.github.io/Weather-Dashboard/",
       gitHubLink: "https://github.com/shale00/Weather-Dashboard",
       alt: "",
@@ -59,7 +39,7 @@ const Portfolio = () => {
     },
     {
       title: "Work Day Scheduler",
-      img: workDayImg,
+      img: schedulerWalkthrough,
       depLink: "https://shale00.github.io/Work-Day-Scheduler/",
       gitHubLink: "https://github.com/shale00/Work-Day-Scheduler",
       alt: "A gif of the app.",
@@ -68,7 +48,7 @@ const Portfolio = () => {
     },
     {
       title: "Code Quiz",
-      img: quizImg,
+      img: cqWalkthrough,
       depLink: "https://shale00.github.io/Code-Quiz/",
       gitHubLink: "https://github.com/shale00/Code-Quiz",
       alt: "Screenshot of app",

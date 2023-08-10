@@ -23,7 +23,7 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
   return (
     <div
       id="tween"
-      className="max-w-lg rounded-lg overflow-hidden shadow-2xl shadow-black grid relative border-2 border-l-0 border-t-0 border-black"
+      className="lg:max-w-max rounded-lg overflow-hidden shadow-2xl shadow-black grid relative border-2 border-l-0 border-t-0 border-black"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -42,7 +42,7 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
         >
           <div className="top-0 left-0 w-full text-center lg:pt-8">
             <p
-              className={`lg:text-3xl text-2xl font-bold mb-4 ${
+              className={`lg:text-3xl md:text-2xl font-bold lg:mb-4 ${
                 hovered
                   ? "opacity-100"
                   : "opacity-0"
@@ -52,27 +52,27 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
             </p>
           </div>
           <div className="">
-            <p className={`lg:m-6 m-2 text-left text-md md:text-md ${
+            <p className={`lg:m-6 m-2 text-left text-xs md:text-md lg:text-lg lg:max-w-prose ${
                 hovered
                   ? "opacity-100"
                   : "opacity-0"
               } transition-all duration-1000`}>
               {description}
             </p>
-            <div className="flex space-x-4 justify-center pt-2">
-              <button
+            <div className="flex space-x-4 justify-center lg:pt-2">
+              <a
                 href={depLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lg:py-2 lg:px-4 py-1 px-2 bg-blue-600 shadow-lg shadow-black rounded-lg hover:scale-110 hover:bg-blue-900 transition-all ease-out duration-300"
+                className="lg:py-2 lg:px-4 py-1 px-2 bg-slate-600 shadow-lg shadow-black rounded-lg hover:scale-110 transition-all ease-out duration-300 deploy"
               >
                 Deployment
-              </button>
+              </a>
               <a
                 href={gitHubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lg:py-2 lg:px-8 py-1 px-7 bg-blue-600 shadow-lg shadow-black rounded-lg hover:scale-110 hover:bg-blue-900 transition-all ease-out duration-300"
+                className="lg:py-2 lg:px-8 py-1 px-7 bg-gray-600 shadow-lg shadow-black rounded-lg hover:scale-110 transition-all ease-out duration-300 github"
               >
                 GitHub
               </a>

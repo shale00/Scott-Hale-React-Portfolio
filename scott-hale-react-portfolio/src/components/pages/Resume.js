@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import icons from "../Icons";
 import { gsap } from "gsap";
-import downloadIcon from "../Icons/icons8-download-64.png";
-import resumeDoc from "../Images/Scott Hale Resume.pdf";
+// import downloadIcon from "../Icons/icons8-download-64.png";
+// import resumeDoc from "../Images/Scott Hale Resume.pdf";
 import "./Resume.css";
 
 export default function Resume() {

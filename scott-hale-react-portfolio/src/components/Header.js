@@ -26,9 +26,6 @@ export default function Header() {
   return (
     <div>
       <div className=" top-0 left-0 right-0 p-3">
-        {/* <div className="text-blue-300">
-          <h1 className="text-3xl">Scott's Portfolio</h1>
-        </div> */}
         <Navigation
           currentPage={currentPage}
           handlePageChange={handlePageChange}

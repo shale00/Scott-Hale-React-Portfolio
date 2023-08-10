@@ -27,7 +27,7 @@ export default function Home() {
 
       {logos.map((logo, i) => (
 
-          <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer" className="hover:scale-125 hover:transition-colors">
+          <a key={i} href={logo.link} target="_blank" rel="noopener noreferrer" className="hover:scale-125 icons hover:rounded-lg transition-all ease-in-out">
             <img
               className="object-scale-down h-10 w-auto"
               src={logo.img}
