@@ -1,21 +1,21 @@
 import Navigation from "./Navigation";
 import React, { useState } from "react";
-import About from "./pages/About";
+import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
 export default function Header() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
-    if (currentPage === "About") {
-      return <About />;
+    if (currentPage === "Home") {
+      return <Home />;
     }
     if (currentPage === "Resume") {
       return <Resume />;
     }
-    if (currentPage === "Portfolio") {
+    if (currentPage === "Projects") {
       return <Portfolio />;
     }
     return <Contact />;
@@ -25,16 +25,13 @@ export default function Header() {
 
   return (
     <div>
-      <div className="sticky top-0 left-0 right-0 bg-gradient-to-r from-gray-900 via-blue-900 to-sky-700 opacity-90 z-50 p-3">
-        <div className="text-blue-300">
-          <h1 className="text-3xl">Scott's Portfolio</h1>
-        </div>
+      <div className=" top-0 left-0 right-0 p-3">
         <Navigation
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
       </div>
-        {renderPage()}
+      {renderPage()}
     </div>
   );
 }
