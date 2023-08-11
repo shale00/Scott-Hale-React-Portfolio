@@ -76,26 +76,31 @@ padding: 2px;
   padding: 2px;
 }
 
-.c-bord {
-  position: relative;
-  border: none;
-  padding: 5px;
-}
 
-.c-bord::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  border-radius: 20px; 
-  z-index: -1; 
-}
 
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
   .custom-border-none {
     background: none;
   }
 }
+
+@media (min-width: 300px) {
+  .c-bord {
+    position: relative;
+    border: none;
+    padding: 5px;
+  }
+  .c-bord::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border-radius: 20px; 
+    z-index: -1; 
+  }
+}
+

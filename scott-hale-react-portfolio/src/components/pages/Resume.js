@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import icons from "../Icons";
 import { gsap } from "gsap";
-// import downloadIcon from "../Icons/icons8-download-64.png";
-// import resumeDoc from "../Images/Scott Hale Resume.pdf";
+import downloadIcon from "../Icons/icons8-download-64v2.png";
+import resumeDoc from "../Images/Scott Hale Resume.pdf";
 import "./Resume.css";
 
 export default function Resume() {
@@ -28,7 +28,6 @@ export default function Resume() {
           from: "center",
         },
         onComplete: () => {
-          // Animation is complete, you can perform any additional actions here
           console.log("Second animation complete!");
         },
       });
@@ -36,31 +35,27 @@ export default function Resume() {
   }, []);
 
   return (
-    <div className="p-8">
-      <div id="tween" className="flex justify-end">
-        {/* <button
-          className=" hover:bg-gray-700 text-black hover:text-white  text-xs font-bold py-1 px-2 rounded flex items-end border-2 border-gray-900"
-          href={resumeDoc}
-          download={resumeDoc}
-        >
-          <img src={downloadIcon} className="object-scale-down w-4"></img>
-          Resume.pdf
-        </button> */}
-      </div>
+    <div className="p-8 max-w-screen-lg mx-auto custom-border custom-border-none rounded-2xl">
       <div id="tween" className="p-10 grid gap-6">
+      <div className="grid place-content-center">
+          <button
+            className="text-black font-bold py-1 px-2 rounded shadow-md shadow-black flex items-end border-2 border-gray-900 max-w-fit place-content-center hover:scale-110 transition-all ease-in-out"
+            href={resumeDoc}
+            download={resumeDoc}
+          >
+            <img src={downloadIcon} className="object-scale-down w-8"></img>
+            Download Resume
+          </button>
+        </div>
         <h1 id="tween" className="text-3xl italic title">
           What I've Learned:
         </h1>
         <ul className="place-content-center  grid gap-2">
-          <li
-            className="p-2 md:p-5 
-        "
-            id="tween"
-          >
+          <li className="p-2 md:p-5 md:max-w-[85%] md:mx-auto" id="tween">
             The fundamental concepts of web development, covering HTML, CSS, and
             JavaScript, as well as command line fundamentals and API
-            consumption. I've engineered full-stack web applications, working with servers,
-            databases, and other back end technologies.
+            consumption. I've engineered full-stack web applications, working
+            with servers, databases, and other back end technologies.
           </li>
         </ul>
       </div>
@@ -78,7 +73,7 @@ export default function Resume() {
           ))}
         </div>
       </div>
-      <div className="pt-40 flex justify-center">
+      <div className="pt-20 flex justify-center">
         <a target="_blank" href="https://icons8.com/icon/21278/css3"></a> Icons
         by{" "}
         <a target="_blank" href="https://icons8.com">
