@@ -18,9 +18,10 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Hello World^1000",
+        "Hello World!^1000",
         "My name is Scott Hale^2000",
-        "Welcome!",
+        "Welcome!^4000 ",
+        // "Are...^1000 are you still here^150.^150.^150."
       ],
       typeSpeed: 75,
       startDelay: 2000,
@@ -57,29 +58,13 @@ export default function Home() {
     <div onMouseMove={onMove}>
       <div className="max-w-screen-lg mx-auto custom-border custom-border-none rounded-2xl">
         <div className="p-10 sm:p-16 grid gap-16 grid-cols-2">
-          <div className="italic section row-start-1 col-span-2">
-            <section className="section p-2 row-start-1 col-span-1 ">
-              <h1
-                id="hello"
-                className="hello text-xl text-gray-400 min-h-full md:min-h-full pl-5"
-              >
-                &lt;h1&gt;
-              </h1>
-            </section>
+          <div className="italic section row-start-1 col-span-2 place-self-center">
             <section className="section">
               <span
                 id="helloWorld"
-                className="hello text-2xl text-white min-h-full md:min-h-full pl-10 mx-auto"
+                className="hello text-2xl text-white min-h-full md:min-h-full mx-auto"
                 ref={el}
               ></span>
-            </section>
-            <section className="section">
-              <h1
-                id="hello"
-                className="hello text-xl text-gray-400 min-h-full md:min-h-full pl-5"
-              >
-                &lt;/h1&gt;
-              </h1>
             </section>
           </div>
 

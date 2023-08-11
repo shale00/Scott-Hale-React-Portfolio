@@ -4,7 +4,7 @@ function Navigation( {currentPage, handlePageChange } ) {
 
   return (
     <div className="p-2">
-        <nav className='flex justify-center space-x-3 md:space-x-5 uppercase rounded-2xl p-8 md:max-w-prose mx-auto c-bord bg-gray-700 nav-border-none'>
+        <nav className='flex justify-center space-x-3 md:space-x-5 uppercase rounded-2xl p-8 md:max-w-prose mx-auto c-bord bg-gray-700 nav-border-none no-bg-xxs'>
           {pages.map((page, i) => (
           <a
             id="navText"

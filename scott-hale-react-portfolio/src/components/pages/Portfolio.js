@@ -8,7 +8,6 @@ import weatherWalkthrough from "../Images/Weather-Walkthrough.gif";
 import schedulerWalkthrough from "../Images/Scheduler-Walkthrough.gif";
 
 const Portfolio = () => {
-
   const projects = [
     {
       title: "Cohort Retort",
@@ -58,12 +57,22 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="flex flex-wrap gap-6 justify-center text-gray-200 p-6">
-      {projects.map((project, index) => (
-        <Card key={index} title={project.title} img={project.img} depLink={project.depLink} gitHubLink={project.gitHubLink} alt={project.alt} description={project.description}/>
-      ))}
+    <div className="max-w-screen-lg mx-auto custom-border custom-border-none rounded-2xl">
+      <div className="flex flex-wrap gap-6 justify-center text-gray-200 p-8">
+        {projects.map((project, index) => (
+          <Card
+            key={index}
+            title={project.title}
+            img={project.img}
+            depLink={project.depLink}
+            gitHubLink={project.gitHubLink}
+            alt={project.alt}
+            description={project.description}
+          />
+        ))}
+      </div>
     </div>
-  )
+  );
 };
 
 export default Portfolio;

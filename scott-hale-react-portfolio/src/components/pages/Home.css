@@ -3,23 +3,6 @@ h1 {
   font-weight: bolder;
 }
 
-/* .custom-border {
-  --b: 20px;
-  --t: 4px;
-  --l: 110px;
-  --g:linear-gradient(#15F4EE 0 0);
-
-  background: var(--g) 0 0 / var(--l) var(--t), 
-  var(--g) 0 0 / var(--t) var(--l), 
-  var(--g) 100% 100% / var(--l) var(--t), 
-  var(--g) 100% 100% / var(--t) var(--l), 
-  none;
-background-repeat: no-repeat;
-clip-path:polygon(0 0,calc(100% - var(--b)) 0,100% var(--b),100% 100%,var(--b) 100%,0 calc(100% - var(--b)));
-position:relative;
-padding: 2px;
-} */
-
 .Home {
   color: #d16ba5;
 }
@@ -29,40 +12,62 @@ padding: 2px;
 }
 
 .Resume {
-  color: #79b3f4
+  color: #79b3f4;
 }
 
 .Contact {
-  color: #5ffbf1
+  color: #5ffbf1;
 }
 
-/* nav a:hover {
-  color: #41dfff;
-} */
-
-/* .icons:hover, button:hover {
-  background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-} */
-
-.icons:hover, button:hover, .submit:hover, .deploy:hover {
-  background: linear-gradient(to right, #d16ba5, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec);
+.icons:hover,
+button:hover,
+.submit:hover,
+.deploy:hover {
+  background: linear-gradient(
+    to right,
+    #d16ba5,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec
+  );
 }
 
 .github:hover {
-  background: linear-gradient(to right, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background: linear-gradient(
+    to right,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
 .custom-border {
   --b: 20px;
   --t: 6px;
   --l: 110px;
-  --g: linear-gradient(to bottom,#d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  --g: linear-gradient(
+    to bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 
-  background: var(--g) 0 0 / var(--l) var(--t),
-    var(--g) 0 0 / var(--t) var(--l),
+  background: var(--g) 0 0 / var(--l) var(--t), var(--g) 0 0 / var(--t) var(--l),
     var(--g) 100% 100% / var(--l) var(--t),
-    var(--g) 100% 100% / var(--t) var(--l),
-    none;
+    var(--g) 100% 100% / var(--t) var(--l), none;
   background-repeat: no-repeat;
   clip-path: polygon(
     0 0,
@@ -76,16 +81,13 @@ padding: 2px;
   padding: 2px;
 }
 
-
-
-
 @media (max-width: 1000px) {
   .custom-border-none {
     background: none;
   }
 }
 
-@media (min-width: 300px) {
+@media (min-width: 350px) {
   .c-bord {
     position: relative;
     border: none;
@@ -98,9 +100,31 @@ padding: 2px;
     right: -5px;
     bottom: -5px;
     left: -5px;
-    background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    border-radius: 20px; 
-    z-index: -1; 
+    background: linear-gradient(
+      to right,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1
+    );
+    border-radius: 20px;
+    z-index: -1;
   }
 }
 
+@media (max-width: 350px) {
+  .display-none-xxs {
+    display: none;
+  }
+  .no-bg-xxs {
+    background: none;
+  }
+}
