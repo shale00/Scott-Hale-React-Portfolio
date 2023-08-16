@@ -38,7 +38,7 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
       <div
         className={` ${
           hovered ? "opacity-100" : "opacity-0"
-        }  absolute top-0 left-0 w-full h-full flex flex-col justify-between items-center text-gray-100 p-4 transition-all duration-500 ease-in-out`}
+        }  absolute top-0 left-0 w-full h-full flex flex-col justify-between items-center text-gray-100 md:p-4 transition-all duration-500 ease-in-out`}
       >
         <div className="top-0 left-0 w-full text-center lg:pt-8">
           <p
