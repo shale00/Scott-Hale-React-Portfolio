@@ -42,9 +42,9 @@ export default function Resume() {
             id="button"
             className="text-black font-bold py-1 px-2 rounded shadow-md shadow-black flex items-end border-2 border-gray-900 max-w-fit place-content-center hover:scale-110 transition-all ease-in-out"
             href={resumeDoc}
-            download={resumeDoc}
+            download={"Scott-Hale-Resume.pdf"}
           >
-            <img src={downloadIcon} className="object-scale-down w-8"></img>
+            <img src={downloadIcon} alt="download icon" className="object-scale-down w-8"></img>
             Download Resume
           </a>
         </div>
