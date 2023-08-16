@@ -38,14 +38,15 @@ export default function Resume() {
     <div className="p-8 max-w-screen-lg mx-auto custom-border custom-border-none rounded-2xl">
       <div id="tween" className="p-10 grid gap-6">
       <div className="grid place-content-center">
-          <button
+          <a
+            id="button"
             className="text-black font-bold py-1 px-2 rounded shadow-md shadow-black flex items-end border-2 border-gray-900 max-w-fit place-content-center hover:scale-110 transition-all ease-in-out"
             href={resumeDoc}
             download={resumeDoc}
           >
             <img src={downloadIcon} className="object-scale-down w-8"></img>
             Download Resume
-          </button>
+          </a>
         </div>
         <h1 id="tween" className="text-3xl italic title">
           What I've Learned:

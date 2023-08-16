@@ -22,7 +22,8 @@ h1 {
 .icons:hover,
 button:hover,
 .submit:hover,
-.deploy:hover {
+.deploy:hover,
+#button:hover {
   background: linear-gradient(
     to right,
     #d16ba5,
