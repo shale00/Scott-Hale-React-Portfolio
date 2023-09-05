@@ -34,7 +34,7 @@ const Portfolio = () => {
       gitHubLink: "https://github.com/shale00/Weather-Dashboard",
       alt: "",
       description:
-        "This is a simple weather app that allows the user to search a city and display the weather data. The app will save the users search history and allow the user to recall the weather data from their history as well.",
+        "This is a simple weather app that allows the user to search a city and display the weather data. The app will save the users search history and allow the user to recall the weather data from their history as well. It was created using HTML, CSS, and Javascript and uses a 3rd Party API to retrieve the weather information.",
     },
     {
       title: "Work Day Scheduler",
