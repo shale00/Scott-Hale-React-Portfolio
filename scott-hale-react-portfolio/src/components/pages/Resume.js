@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import icons from "../Icons";
 import { gsap } from "gsap";
 import downloadIcon from "../Icons/icons8-download-64v2.png";
-import resumeDoc from "../Images/Scott Hale Resume.pdf";
+// import resumeDoc from "../Images/Scott Hale Resume.pdf";
 import "./Resume.css";
 
 export default function Resume() {
@@ -37,16 +37,21 @@ export default function Resume() {
   return (
     <div className="p-8 max-w-screen-lg mx-auto custom-border custom-border-none rounded-2xl">
       <div id="tween" className="p-10 grid gap-6">
-      <div className="grid place-content-center">
-          <a
+        <div className="grid place-content-center">
+          {/* <a
             id="button"
             className="text-black font-bold py-1 px-2 rounded shadow-md shadow-black flex items-end border-2 border-gray-900 max-w-fit place-content-center hover:scale-110 transition-all ease-in-out"
-            href={resumeDoc}
-            download={"Scott-Hale-Resume.pdf"}
+            href="https://docs.google.com/document/d/1iZMGhruoeSLATSP6G8rjYK7e-0YMvf2e3HJciQrAgJg/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <img src={downloadIcon} alt="download icon" className="object-scale-down w-8"></img>
-            Download Resume
-          </a>
+            <img
+              src={downloadIcon}
+              alt="download icon"
+              className="object-scale-down w-8"
+            ></img>
+            Resume
+          </a> */}
         </div>
         <h1 id="tween" className="text-3xl italic title">
           What I've Learned:
@@ -56,7 +61,16 @@ export default function Resume() {
             The fundamental concepts of web development, covering HTML, CSS, and
             JavaScript, as well as command line fundamentals and API
             consumption. I've engineered full-stack web applications, working
-            with servers, databases, and other back end technologies.
+            with servers, databases, and other back end technologies. Click{" "}
+            <a
+              className="hover:underline decoration-2 hover:uppercase hover:font-extrabold font-semibold Contact"
+              href="https://docs.google.com/document/d/1iZMGhruoeSLATSP6G8rjYK7e-0YMvf2e3HJciQrAgJg/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>{" "}
+            to see my resume.
           </li>
         </ul>
       </div>
