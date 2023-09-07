@@ -63,7 +63,7 @@ export default function Resume() {
             consumption. I've engineered full-stack web applications, working
             with servers, databases, and other back end technologies. Click{" "}
             <a
-              className="hover:underline decoration-2 hover:uppercase hover:font-extrabold font-semibold Contact"
+              className="underline decoration-2 font-semibold Contact"
               href="https://docs.google.com/document/d/1iZMGhruoeSLATSP6G8rjYK7e-0YMvf2e3HJciQrAgJg/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
