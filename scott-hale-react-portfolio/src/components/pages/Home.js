@@ -9,7 +9,7 @@ export default function Home() {
     gsap.fromTo(
       ".section",
       { x: -400, opacity: 0 },
-      { x: 0, y: 0, opacity: 1, duration: 1.25, stagger: 0.15 }
+      { x: 0, y: 0, opacity: 1, duration: .75, stagger: 0.15 }
     );
   });
 
