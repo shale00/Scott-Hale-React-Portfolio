@@ -10,7 +10,7 @@ export default function Resume() {
     const firstAnimation = gsap.fromTo(
       "#tween",
       { x: -400, opacity: 0 },
-      { x: 0, y: 0, opacity: 1, duration: .75, stagger: 0.15 }
+      { x: 0, y: 0, opacity: 1, duration: .55, stagger: 0.15 }
     );
 
     firstAnimation.eventCallback("onComplete", () => {

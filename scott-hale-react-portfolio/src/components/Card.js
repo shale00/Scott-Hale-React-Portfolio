@@ -6,7 +6,7 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
     gsap.fromTo(
       "#tween",
       { x: -400, opacity: 0 },
-      { x: 0, y: 0, opacity: 1, duration: .00, stagger: 0.15 }
+      { x: 0, y: 0, opacity: 1, duration: .10, stagger: 0.15 }
     );
   }, []);
 
@@ -42,7 +42,7 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
       >
         <div className="top-0 left-0 w-full text-center lg:pt-8">
           <p
-            className={`lg:text-3xl md:text-2xl font-bold lg:mb-4 ${
+            className={`lg:text-3xl md:text-2xl font-bold lg:mb-4 pt-1 ${
               hovered ? "opacity-100" : "opacity-0"
             } transition-all duration-1000`}
           >
@@ -50,7 +50,7 @@ const Card = ({ title, img, depLink, gitHubLink, alt, description }) => {
           </p>
         </div>
         <p
-          className={`lg:m-6 text-left text-xs sm:text-base lg:text-lg lg:max-w-prose display-none-xxs ${
+          className={`lg:m-6 text-left text-xs sm:text-base lg:text-lg lg:max-w-prose display-none-xxs pl-2 pr-2 ${
             hovered ? "opacity-100" : "opacity-0"
           } transition-all duration-1000`}
         >

@@ -16,7 +16,7 @@ const Portfolio = () => {
       gitHubLink: "https://github.com/shale00/Cohort-Retort",
       alt: "Snapshot of a cohort-retort webpage",
       description:
-        "This app was created using a full MERN stack. It is a social networking app designed to keep classmates in touch. Users can create an account and post messages and comments. Each user has their own profile page, where the user can update their information. To sign in as a guest user: Email: guest@email.com Password: password",
+        "A social networking app created using a full MERN stack designed to keep classmates in touch. Users can create an account and post messages and comments as well as update their information. To sign in as a guest user: Email: guest@email.com Password: password",
     },
     {
       title: "Parktivities",
