@@ -64,7 +64,7 @@ export default function Resume() {
             with servers, databases, and other back end technologies. Click{" "}
             <a
               className="underline decoration-2 font-semibold Contact"
-              href="https://docs.google.com/document/d/1iZMGhruoeSLATSP6G8rjYK7e-0YMvf2e3HJciQrAgJg/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1kZaUI3UZaO27X2BzzSQAaT-emE1TQeUywheSAQHKdBQ/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
